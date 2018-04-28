@@ -46,6 +46,7 @@ export default {
   .HomeList {
     .header,.footer{
       position: fixed;
+      line-height: 40px;
       height: 40px;
       background-color: #000;
       width: 100%;

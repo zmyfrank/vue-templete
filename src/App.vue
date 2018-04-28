@@ -1,14 +1,20 @@
 <template>
   <div id="app">
+    <div class="mask" v-show="showMask"></div>
     <keep-alive include="">
-      <router-view/>
+      <router-view class="router-wrapper"></router-view>
     </keep-alive>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  computed: {
+    showMask () {
+      return this.$store.state.isFetching
+    }
+  }
 }
 </script>
 
@@ -19,6 +25,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+  .mask{
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .showMask{
+    margin: 40px 0;
+  }
 </style>

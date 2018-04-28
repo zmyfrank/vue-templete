@@ -14,6 +14,7 @@ const state = {
     { id: 1, text: '...', done: true },
     { id: 2, text: '...', done: false }
   ],
+  isFetching: false,
   history: []
 }
 

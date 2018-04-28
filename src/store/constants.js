@@ -1,0 +1,5 @@
+export const FETCH_TOPICS_SUC = 'FETCH_TOPICS_SUC'
+export const FETCH_TOPICS_REQ = 'FETCH_TOPICS_REQ'
+export const FETCH_TOPICS_ERR = 'FETCH_TOPICS_ERR'
+export const SET_USER_INFO = 'SET_USER_INFO'
+export const SHOW_MASK = 'SHOW_MASK'

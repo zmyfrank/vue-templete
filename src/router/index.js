@@ -14,6 +14,7 @@ const router = new Router({
   mode: 'history',
   routes: [
     {
+      name: '404页面',
       path: '*',
       component: notFound
     },

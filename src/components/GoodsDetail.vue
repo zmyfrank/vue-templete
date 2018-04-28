@@ -26,8 +26,9 @@ export default {
     }
   },
   methods: {
-    clickNew () {
-      this.incrementBy(1000)
+    async clickNew () {
+      const res = await this.$store.dispatch('loginInfo')
+      alert(res)
     },
     ...mapMutations({add: 'increment'}),
     ...mapActions(['increment', 'incrementBy'])
