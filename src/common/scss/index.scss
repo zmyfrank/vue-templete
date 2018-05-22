@@ -1,0 +1,158 @@
+@import "loader";
+@import "mixin";
+@import "style.css";
+
+// 字体颜色
+.color-999 {
+  color: #999;
+}
+
+.color-444 {
+  color: #444;
+}
+
+.color-222 {
+  color: #222;
+}
+
+.color-fff {
+  color: #fff;
+}
+
+.color-red {
+  color: #F22E3A;
+}
+
+.color-f68 {
+  color: #F6852F;
+}
+
+// 背景颜色
+.bg-f5 {
+  background-color: #F5F5F5;
+}
+
+.bg-fff {
+  background-color: #fff;
+}
+
+.bg-red {
+  background-color: #F22E3A;
+}
+
+.bg-green {
+  background-color: #F6852F;
+}
+
+// 一般按钮颜色
+.bg-67c {
+  background-color: #67C23A;
+}
+
+// 字体大小
+.font-24 {
+  font-size: 24px;
+}
+
+.font-26 {
+  font-size: 26px;
+}
+
+.font-28 {
+  font-size: 28px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.font-42 {
+  font-size: 42px;
+}
+
+.font-blod {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// 底部距离
+.pd-bottom-230 {
+  padding-bottom: 230px;
+}
+
+.pd-bottom-110 {
+  padding-bottom: 110px;
+}
+
+.pd-bottom-24 {
+  padding-bottom: 24px;
+}
+
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+.pd-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+// 图标
+.icon-rightn {
+  @include bg-img-icon(12px, 22px, "../../assets/icon-right")
+}
+
+.icon-myorder {
+  @include bg-imgall(40px, "../../assets/icon-myorder")
+}
+
+.icon-mycard {
+  @include bg-imgall(40px, "../../assets/icon-mycard")
+}
+
+.icon-success-60 {
+  @include bg-imgall(60px, "../../assets/icon-success-60")
+}
+
+.icon-wechat2 {
+  @include bg-imgall(48px, "../../assets/icon-wechat")
+}
+
+.icon-order-user {
+  @include bg-imgall(80px, "../../assets/icon-order-user")
+}
+
+.icon-order-phone {
+  @include bg-imgall(80px, "../../assets/icon-order-phone")
+}
+
+.icon-order-code {
+  @include bg-imgall(80px, "../../assets/icon-order-code")
+}
+
+// border
+.border-none {
+  border: none !important;
+}
+
+// 重置button样式
+button {
+  outline: none;
+  border: none;
+}
+
+i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dsn {
+  display: none;
+}

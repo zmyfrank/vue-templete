@@ -8,10 +8,18 @@ const goods = () => import('@/components/Goods')
 const login = () => import('@/components/Login')
 const goodsList = () => import('@/components/GoodsList')
 const goodsDetail = () => import('@/components/GoodsDetail')
+const goodsStoreList = () => import('@/components/GoodsStoreList')
+const groupStart = () => import('@/components/GroupStart')
+const groupInvite = () => import('@/components/GroupInvite')
+const cardPackage = () => import('@/components/CardPackage')
+const mine = () => import('@/components/Mine')
+const myOrderList = () => import('@/components/MyOrderList')
+const myOrderDetail = () => import('@/components/MyOrderDetail')
+const goodsOrder = () => import('@/components/GoodsOrder')
 const notFound = () => import('@/components/NotFound')
 
 const router = new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       name: '404页面',
@@ -39,8 +47,64 @@ const router = new Router({
           meta: {
             title: '商品详情'
           }
+        },
+        {
+          path: 'goodsStoreList',
+          component: goodsStoreList,
+          meta: {
+            title: '可用分店'
+          }
+        },
+        {
+          path: 'goodsOrder',
+          component: goodsOrder,
+          meta: {
+            title: '下单'
+          }
         }
       ]
+    },
+    {
+      path: '/group/groupStart',
+      component: groupStart,
+      meta: {
+        title: '发起拼团'
+      }
+    },
+    {
+      path: '/group/groupInvite',
+      component: groupInvite,
+      meta: {
+        title: '发起拼团'
+      }
+    },
+    {
+      path: '/cardPackage',
+      component: cardPackage,
+      meta: {
+        title: '我的卡包'
+      }
+    },
+    {
+      path: '/mine',
+      component: mine,
+      meta: {
+        title: '我的'
+      }
+    },
+    {
+      path: '/myOrderList',
+      component: myOrderList,
+      meta: {
+        title: '我的订单'
+      }
+    },
+    {
+      path: '/myOrderDetail',
+      component: myOrderDetail,
+      meta: {
+        title: '订单详情'
+      }
     },
     {
       path: '/login',

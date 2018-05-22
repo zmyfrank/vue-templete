@@ -2,7 +2,7 @@ import Mock from 'mockjs'
 
 const obj = {'aa': '11', 'bb': '22', 'cc': '33', 'dd': '44'}
 
-Mock.mock('loginee', {
+Mock.mock('login', {
   'user|1-3': [{ // 随机生成1到3个数组元素
     'name': '@cname', // 中文名称
     'id|+1': 88, // 属性值自动加 1，初始值为88
