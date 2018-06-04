@@ -18,6 +18,8 @@ const myOrderDetail = () => import('@/components/MyOrderDetail')
 const goodsOrder = () => import('@/components/GoodsOrder')
 const notFound = () => import('@/components/NotFound')
 
+const test = () => import('@/components/Test')
+
 const router = new Router({
   // mode: 'history',
   routes: [
@@ -29,6 +31,13 @@ const router = new Router({
     {
       path: '/',
       redirect: '/goods/goodsList'
+    },
+    {
+      path: '/test',
+      component: test,
+      meta: {
+        title: '测试'
+      }
     },
     {
       path: '/goods',
